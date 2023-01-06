@@ -1,0 +1,28 @@
+<table class="container">
+  <thead>
+    <tr>
+      <td colspan="3" class="result">{{result}}</td>
+      <td class="myName">Fadi Salameh</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td  class="btn" (click)="getChar(i)" *ngFor="let i of ['+', '-', '*', '/']"> {{i}}</td>
+    </tr>
+    <tr>
+      <td class="btn" (click)="getChar(i)" *ngFor="let i of [7,8,9]">{{i}}</td>
+      <td class="btn" (click)="showResult()" rowspan="4">=</td>
+    </tr>
+    <tr>
+      <td class="btn" (click)="getChar(i)" *ngFor="let i of [4,5,6]">{{i}}</td>
+    </tr>
+     <tr>
+      <td class="btn" (click)="getChar(i)" *ngFor="let i of [1,2,3]">{{i}}</td>
+    </tr>
+     <tr>
+      <td class="btn" (click)="getChar(0)" >0</td>
+      <td class="btn" (click)="getChar('.')" >.</td>
+      <td (click)="clearResult()" class=" btn acButton">AC</td>
+    </tr>
+  </tbody>
+</table>
